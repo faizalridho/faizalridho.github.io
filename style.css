@@ -1,0 +1,166 @@
+@import url("https:fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.Menu-Awal {
+  width: 100%;
+  height: auto;
+  background: url(img/bg.png);
+  background-size: cover;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 100px;
+  margin-top: 0;
+}
+.logo {
+  max-height: 60px;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+nav ul li a {
+  color: #34495e; 
+  position: relative;
+  padding: 5px 0;
+}
+nav ul li a:hover {
+  color: #e74c3c; 
+}
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #e74c3c; 
+  transition: 0.3s;
+  bottom: 0;
+}
+nav ul li a:hover:after {
+  width: 100%;
+}
+.btn {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 16px 40px;
+  border-radius: 500px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all 0.4s ease-in-out;
+  background-size: 152% 100%;
+  background: #e74c3c; 
+  border: 2px solid #e74c3c; 
+}
+.btn:hover {
+  background: transparent;
+  border-color: #e74c3c; 
+  color: #e74c3c; 
+}
+.content {
+  position: relative;
+  top: 35%;
+  left: 8%;
+}
+.content .title {
+  color: #34495e; 
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  display: inline-block;
+  margin-bottom: 20px;
+  background: linear-gradient(
+    120deg,
+    #e74c3c 20.69%, 
+    #7644ff 50.19%,
+    #34495e 79.69% 
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.content h1 {
+  color: #2c3e50; 
+  font-size: 75px;
+  font-weight: 900;
+  line-height: 90px;
+  text-transform: inherit;
+  width: 70%;
+}
+.content h1 span {
+  color: #e74c3c; 
+}
+.content p {
+  width: 55%;
+  color: #555555;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+#home,
+#experience,
+#education,
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #f2f2f2;
+}
+#home .title,
+#experience .title,
+#education .title,
+#contact .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+#home h1,
+#experience h1,
+#education h1,
+#contact h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #1f1f25;
+    margin-bottom: 20px;
+}
+
+#home p,
+#experience p,
+#education p,
+#contact p {
+    font-size: 16px;
+    text-align: center;
+    color: #555555;
+    max-width: 800px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#scrollToTopBtn {
+    display: none;
+}
+
+body.scrolled #scrollToTopBtn {
+    display: block;
+}
